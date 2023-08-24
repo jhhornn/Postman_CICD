@@ -8,7 +8,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Install Postman CLI
-        run: curl -o- “https://dl-cli.pstmn.io/install/linux64.sh” | sh
+        run: curl -o- "https://dl-cli.pstmn.io/install/osx_64.sh" | sh
       - name: Login Postman
         run: postman login —with-api-key ${{ secrets.POSTMAN_API_KEY }}
       - name: Run API tests
